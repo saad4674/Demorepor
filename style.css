@@ -1,0 +1,200 @@
+h1 {
+    text-align: center;
+    color: blue;
+     text-shadow: 4px 4px 7px rgb(150, 142, 142); 
+}
+.title {
+    color: rgb(9, 165, 48);
+}
+#italic {
+    color: darkmagenta;
+}
+nav{
+    background-color: aqua;
+    text-align:center ;
+}
+.nav-wrapper{
+    background-color: rgb(83, 30, 137);
+}
+a{
+    text-decoration-line:none ;
+}
+nav ul{
+list-style: circle;
+}
+
+nav li{
+    display: inline-block;
+    padding: 30px;
+}
+
+.container{
+   border:10px solid blue ; 
+   margin: 50px 5px;
+   padding: 30px 0px 10px 35px;
+}
+.Box {
+    
+    height: 200px;
+    width: 200px;
+    margin: ;
+    background: blue;
+    margin: 10px;
+    
+}
+@keyframes fadeMe {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+#box1 {
+    animation-name: fadeMe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotation {
+    0% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+#box2  {
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: 4s;
+    animation-timing-function: ease-in-out;
+    border-radius: 10%;
+    background-image: radial-gradient(circle, purple, rgb(134, 90, 6), pink, red
+    );
+}
+@keyframes getBigger {
+    0%{transform: scale(1);}
+    50%{transform: scale(2);}
+    100%{transform: scale(.5);}
+}
+#box3 {
+    animation:  getBigger 6s 8s ease-in;
+    border-radius: 50%;
+    background: orange;
+}
+@keyframes changeColors{
+    0% {background-color: gray;}
+    25% {background-color: yellowgreen;}
+    50% {background-color: red;}
+    75% {background-color: green;}
+    100% {background-color: gray;}
+}
+#box4 {
+    animation: changeColors 7s 2s;
+}
+@keyframes moveBox{
+    0%{left: 0px; top: 0px;}
+    25%{left: 100px; top: 0px;}
+    50%{left: 100px; top: 200px;}
+    75%{left: 0px; top: 200px;}
+    100%{left: 0px; top: 0px;}
+}
+#box5 {
+    position: relative;
+    background-color: blueviolet;
+    animation: moveBox 5s 3s;
+}
+#box6 {
+    top: 10px;
+    left: 20px;
+    position: relative;
+}
+
+html {
+    background-image: rgb(81, 81, 183);
+
+}
+.img{
+    border: radius: 50%;
+
+}
+img{
+    box-shadow: 8px 5px 3px 10px rgb(142, 50, 50)inset
+    ;
+}
+.flex {
+    margin: 10px;
+    border: 3px solid rgb(174, 8, 8) ;
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+    
+
+        
+    }
+.form input,textarea, bottom: {
+    display: block;
+    margin: 30px
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 20% ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: #f0efe4;
+    color: rgb(212, 225, 188);
+  }
+
+  .box {
+    background-color: yellow;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index:10;
+
+  }
+
+  .a {
+    grid-column: col / span  2;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+  }
+  .b {
+    grid-column: col 3 / span  3 ;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+  }
+  .c {
+    grid-column: col /span 1 ;
+    grid-row: row 3 ;
+    display: flex;
+    justify-content: center;
+  }
+  .d {
+    grid-column: col 2 / span  1 ;
+    grid-row: row 3 ;
+    display: flex;
+    justify-content: center;
+  }
+
+  .e {
+    grid-column: col 4 / span  1;
+    grid-row: row 3;
+    display: flex;
+    justify-content: center;
+  }
+
+  .f {
+    grid-column: col 2 / span 3;
+    grid-row: row 2  ;
+    background-color: rgba(49,121,207, 0.5);
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+
+  }
+
+
